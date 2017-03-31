@@ -14,7 +14,7 @@
 */
 
 require __DIR__.'/bootstrap/autoload.php';
-
+require __DIR__.'/app/Console/Application.php';
 $app = require_once __DIR__.'/bootstrap/app.php';
 
 /*
