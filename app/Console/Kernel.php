@@ -12,9 +12,13 @@ class Kernel extends ConsoleKernel
      *
      * @var array
      */
-    protected $commands = [
-        //
-    ];
+     protected $commands = [
+         Commands\EESite::class,
+         Commands\EESiteCreate::class,
+         Commands\EESiteUpdate::class,
+         Commands\EESiteEdit::class,
+         Commands\EESiteDelete::class,
+     ];
 
     /**
      * Define the application's command schedule.
