@@ -4,6 +4,8 @@ namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+
+//include our Console\Application
 use EasyEngine\Console\Application as EEArtisan;
 
 class Kernel extends ConsoleKernel
@@ -43,6 +45,8 @@ class Kernel extends ConsoleKernel
         require base_path('routes/console.php');
     }
 
+
+    //Create artisan object from our console/Application class
     protected function getArtisan()
     {
         if (is_null($this->artisan)) {
